@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+                document.getElementById("theme-icon").classList.add("moon");
+            }
+
+            showSection('about'); 
+        });
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                setTimeout(() => section.style.display = 'none', 300);
+            });
+
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                setTimeout(() => {
+                    activeSection.style.display = 'block';
+                    activeSection.style.opacity = '1';
+                }, 300);
+            }
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+            const themeIcon = document.getElementById("theme-icon");
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+                themeIcon.classList.add("moon");
+            } else {
+                localStorage.setItem("theme", "light");
+                themeIcon.classList.remove("moon");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('about'); return false;">About</a></li>
+                <li><a href="#" onclick="showSection('projects'); return false;">Projects</a></li>
+                <li><a href="#" onclick="showSection('contact'); return false;">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="theme-icon" class="theme-icon" onclick="toggleTheme()"></div>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <img src="Profile.jpeg" alt="Profile Picture" class="profile-pic">
+            <h2>About Me</h2>
+            <p>Hello! I'm Amitesh Singh, 1st year student at Amrita Vishwa Vidyapeetham, in B.Tech CSE. I am from Bihar/Mumbai.</p>
+            <p>I'm a passionate developer with a strong interest in reverse engineering, web development, and data-driven solutions. I enjoy breaking down complex systems to understand how they work and using that knowledge to build innovative tools.
+
+                <br><br>Currently, I'm developing a Student Performance Dashboard to help educators track student progress, along with a Chrome extension that collects and analyzes OLabs data. My goal is to create impactful solutions that improve learning experiences and optimize performance tracking. You can find it in the Projects Section.<br><br>
+            In addition to my projects, I have a keen interest in cybersecurity and ethical hacking. I play CTFs every weekend with my team. In particular I do reversing and misc. I 
+                
+                I’m always exploring new technologies, whether it's security research, automation, or front-end development. If you're interested in collaborating or discussing ideas, feel free to reach out! My contact details are in Contact Me.</p>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Just one project for now.</p>
+            <div class="project-list">
+                <div class="project">
+                    <a href="https://github.com/bosnian8275/student-Overwatch" target="_blank" style="text-decoration: none; color: inherit;">
+                        <h3>Project 1: Overwatch</h3>
+                        <p>A cool web application I built for the OLabs hackathon with my teammate Swyam. It collects student data and displays it in a user-friendly manner to the teachers to help them cater to the needs of each student.<br><br>
+                            But that is not all that it does, it can also be used to prevent students from cheating during exams or getting distracted while doing assignments. Check it out by clicking here. </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Now how do you contact the legendary ME.<br><br>
+            1. My <a href="mailto:amitesh022005@gmail.com" target="_blank">email</a><br>
+            2. My <a href="https://www.linkedin.com/in/amitesh-singh-221b00322/" target="_blank">Linkedin</a><br>
+            3. You also find my work on my <a href="https://github.com/bosnian8275" target="_blank">github page</a> </p>
+        </div>
+    </section>
+    
+
+</body>
+</html>
