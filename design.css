@@ -1,21 +1,20 @@
-/* General Styles */
 body {
-    font-family: 'Quicksand', sans-serif; /* Original font */
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f6d365, #fda085); /* Original light mode background */
-    color: #333; /* Original light mode text color */
+    background: linear-gradient(135deg, #f6d365, #fda085); 
+    color: #333; 
     text-align: center;
     transition: background 0.5s, color 0.5s;
-    line-height: 1.6; /* Improve line spacing */
+    line-height: 1.6; 
     font-size: 16px;
 }
 
 h1, h2, h3 {
-    font-family: 'Quicksand', sans-serif; /* Original font for headings */
-    font-weight: bolder; /* Make headings slightly bold */
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: bolder; 
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #8B0000, #B22222); /* Darker red gradient for titles in light mode */
+    background: linear-gradient(135deg, #8B0000, #B22222); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -27,22 +26,22 @@ p {
     font-size: 1.1em;
     margin-bottom: 20px;
     font-weight: bold;
-    background: linear-gradient(135deg, #FF6347, #FF4500); /* Lighter red gradient for content in light mode */
+    background: linear-gradient(135deg, #FF6347, #FF4500);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-/* Dark Mode */
+
 body.dark-mode {
-    background: #0b0c10; /* Deep black or dark navy */
+    background: #0b0c10; 
     color: #DCDDDE;
 }
 
 body.dark-mode h1, 
 body.dark-mode h2, 
 body.dark-mode h3 {
-    background: linear-gradient(135deg, #4B0082, #6A0DAD); /* Darker purple gradient for titles in dark mode */
+    background: linear-gradient(135deg, #4B0082, #6A0DAD); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -50,7 +49,7 @@ body.dark-mode h3 {
 }
 
 body.dark-mode p {
-    background: linear-gradient(135deg, #9370DB, #BA55D3); /* Lighter purple gradient for content in dark mode */
+    background: linear-gradient(135deg, #9370DB, #BA55D3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -58,42 +57,41 @@ body.dark-mode p {
 }
 
 .profile-pic {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Ensure the height matches the width for a perfect circle */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image fits within the circle */
-    border: 3px solid #a020f0; /* Neon purple border */
-    box-shadow: 0px 4px 8px rgba(160, 32, 240, 0.5); /* Soft neon purple glow */
-    transition: transform 0.3s ease-in-out; /* Optional: Add a hover effect */
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 3px solid #a020f0;
+    box-shadow: 0px 4px 8px rgba(160, 32, 240, 0.5);
+    transition: transform 0.3s ease-in-out;
 }
 
 .profile-pic:hover {
-    transform: scale(1.1); /* Optional: Slight zoom on hover */
+    transform: scale(1.1);
 }
 
-/* Header */
 header {
-    background: linear-gradient(135deg, #a020f0, #00ffff); /* Neon purple to electric blue */
+    background: linear-gradient(135deg, #a020f0, #00ffff);
     color: white;
     padding: 20px 0;
     position: relative;
-    box-shadow: 0px 4px 8px rgba(0, 255, 255, 0.5); /* Soft electric blue glow */
+    box-shadow: 0px 4px 8px rgba(0, 255, 255, 0.5);
 }
 
-/* Dark Mode Header */
+
 body.dark-mode header {
-    background: linear-gradient(135deg, #232428, #4B0082); /* Dark gray to indigo for dark mode */
-    color: #DCDDDE; /* Light gray text color */
-    box-shadow: 0px 4px 8px rgba(75, 0, 130, 0.5); /* Soft indigo glow */
+    background: linear-gradient(135deg, #232428, #4B0082);
+    color: #DCDDDE; 
+    box-shadow: 0px 4px 8px rgba(75, 0, 130, 0.5); 
 }
 
 body.dark-mode h1 {
-    background: none; /* Remove gradient */
-    color: white; /* Set text color to white */
+    background: none; 
+    color: white; 
     -webkit-text-fill-color: white;
 }
 
-/* Theme Toggle Icon */
+
 .theme-icon {
     position: absolute;
     top: 20px;
@@ -106,27 +104,27 @@ body.dark-mode h1 {
     justify-content: center;
     cursor: pointer;
     border-radius: 50%;
-    background: #a020f0; /* Neon purple */
+    background: #a020f0;
     color: white;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    box-shadow: 0px 4px 8px rgba(160, 32, 240, 0.5); /* Soft neon purple glow */
+    box-shadow: 0px 4px 8px rgba(160, 32, 240, 0.5); 
 }
 
-/* Sun/Moon Icon Toggle */
+
 .theme-icon::before {
-    content: "🌞";  /* Default: Sun */
+    content: "🌞";  
 }
 
 body.dark-mode .theme-icon {
-    background: #DCDDDE; /* Discord Gray */
+    background: #DCDDDE; 
     color: #232428;
 }
 
 body.dark-mode .theme-icon::before {
-    content: "🌙";  /* Dark Mode: Moon */
+    content: "🌙";  
 }
 
-/* Navigation */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -139,7 +137,7 @@ nav ul li {
 
 nav ul li a {
     font-family: 'Quicksand', sans-serif;
-    color: #00ffff; /* Electric blue */
+    color: #00ffff; 
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
@@ -148,70 +146,70 @@ nav ul li a {
 }
 
 body.dark-mode nav ul li a {
-    color: #00ffff; /* Electric blue */
+    color: #00ffff; 
 }
 
 body.dark-mode nav ul li a:hover {
-    color: #ff00ff; /* Magenta */
+    color: #ff00ff; 
 }
 
 body.dark-mode .profile-pic {
-    border: 3px solid #a020f0; /* Neon purple border */
-    box-shadow: 0px 4px 8px rgba(160, 32, 240, 0.5); /* Soft neon purple glow */
+    border: 3px solid #a020f0; 
+    box-shadow: 0px 4px 8px rgba(160, 32, 240, 0.5); 
 }
 
 body.dark-mode .project {
-    background: #0b0c10; /* Deep black or dark navy */
-    color: #a020f0; /* Neon purple for general text */
-    box-shadow: 0px 4px 10px rgba(160, 32, 240, 0.5); /* Soft neon purple glow */
+    background: #0b0c10; 
+    color: #a020f0; 
+    box-shadow: 0px 4px 10px rgba(160, 32, 240, 0.5); 
 }
 
 body.dark-mode .project h3 {
-    color: #ffffff; /* White for "Project 1" and "Project 2" titles */
+    color: #ffffff; 
 }
 
 body.dark-mode .project:hover {
-    background: #1a1a1d; /* Slightly lighter black */
+    background: #1a1a1d; 
 }
 
 #contact a {
     font-family: 'Quicksand', sans-serif;
-    color: #FF4500; /* Vibrant orange for light mode */
+    color: #FF4500; 
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
-    border-bottom: 2px solid transparent; /* Underline effect */
+    border-bottom: 2px solid transparent; 
 }
 
 #contact a:hover {
-    transform: translateY(-2px); /* Slight upward movement */
-    text-shadow: 0px 4px 6px rgba(255, 69, 0, 0.5); /* Orange glow effect */
-    border-bottom: 2px solid #FF6347; /* Underline appears on hover */
+    transform: translateY(-2px); 
+    text-shadow: 0px 4px 6px rgba(255, 69, 0, 0.5); 
+    border-bottom: 2px solid #FF6347; 
 }
 
-/* Contact Links in Dark Mode */
+
 body.dark-mode #contact a {
-    color: #00FFFF; /* Electric blue for dark mode */
+    color: #00FFFF; 
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
-    border-bottom: 2px solid transparent; /* Underline effect */
+    border-bottom: 2px solid transparent; 
 }
 
 body.dark-mode #contact a:hover {
-    color: #7289DA; /* Soft blue on hover */
-    transform: translateY(-2px); /* Slight upward movement */
-    border-bottom: 2px solid #7289DA; /* Underline appears on hover */
+    color: #7289DA; 
+    transform: translateY(-2px); 
+    border-bottom: 2px solid #7289DA; 
 }
 
 nav ul li a:hover {
-    color: #ff00ff; /* Magenta */
+    color: #ff00ff; 
 }
 
-/* Sections */
+
 .section {
     padding: 60px 20px;
-    background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Blue gradient for light mode */
+    background: linear-gradient(135deg, #89f7fe, #66a6ff); 
     width: 80%;
     margin: 40px auto;
     border-radius: 20px;
@@ -231,30 +229,30 @@ nav ul li a:hover {
     text-fill-color: transparent;
 }
 
-/* Dark Mode Section */
+
 body.dark-mode .section {
-    background: linear-gradient(135deg, #E6E6E6, #C0C0C0); /* Shiny silver gradient */
-    color: #333; /* Adjust text color for contrast */
+    background: linear-gradient(135deg, #E6E6E6, #C0C0C0); 
+    color: #333; 
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    border: 1px solid #D3D3D3; /* Add a light border for definition */
+    border: 1px solid #D3D3D3;
 }
 
 body.dark-mode .section h1, 
 body.dark-mode .section p {
-    background: linear-gradient(135deg, #6A0DAD, #8A2BE2); /* Purple gradient for text in dark mode */
+    background: linear-gradient(135deg, #6A0DAD, #8A2BE2); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
 }
 
-/* Show Default Section */
+
 #about {
     display: block;
     opacity: 1;
 }
 
-/* Projects */
+
 .project-list {
     display: flex;
     justify-content: center;
