@@ -273,3 +273,29 @@ body.dark-mode .section p {
     background: linear-gradient(135deg, #8fd3f4, #84fab0);
 }
 
+#ctfs a {
+    font-family: 'Quicksand', sans-serif;
+    color: #FF4500; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#ctfs a:hover {
+    color: #FF6347; 
+    transform: scale(1.1); 
+}
+
+
+body.dark-mode #ctfs a {
+    color: #9370DB; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+body.dark-mode #ctfs a:hover {
+    color: #7289DA; 
+    transform: scale(1.1); 
+}
+
