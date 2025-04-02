@@ -303,13 +303,13 @@ body.dark-mode #ctfs a:hover {
 
 #ctfs li {
     font-family: 'Quicksand', sans-serif;
-    color: #FF6347;
+    color: #FF6347 !important;
     font-weight: bold;
 }
 
 body.dark-mode #ctfs li {
     font-family: 'Quicksand', sans-serif;
-    color: #9370DB;
+    color: #9370DB !important;
     font-weight: bold;
 }
 
