@@ -235,7 +235,7 @@ nav ul li a:hover {
 
 body.dark-mode .section {
     background: linear-gradient(135deg, #E6E6E6, #C0C0C0); 
-    color: #333; /* Adjust text color for contrast */
+    color: #333;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     border: 1px solid #D3D3D3;
 }
@@ -288,7 +288,7 @@ body.dark-mode .section p {
     transform: scale(1.1); 
 }
 
-/* CTF Links - Dark Mode */
+
 body.dark-mode #ctfs a {
     color: #9370DB; 
     text-decoration: none;
@@ -301,4 +301,15 @@ body.dark-mode #ctfs a:hover {
     transform: scale(1.1); 
 }
 
+#ctfs li {
+    font-family: 'Quicksand', sans-serif;
+    color: #FF6347;
+    font-weight: bold;
+}
+
+body.dark-mode #ctfs li {
+    font-family: 'Quicksand', sans-serif;
+    color: #9370DB;
+    font-weight: bold;
+}
 
