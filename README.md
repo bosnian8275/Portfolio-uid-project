@@ -1,4 +1,4 @@
-This is a website for my portfolio. It has the foll sections
+This is a website for my portfolio. It has the following sections
 1. About me: Well tells you all about me
 2. Projects: Projects I have made
 3. CTFs: CTFs I have participated in
