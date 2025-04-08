@@ -139,7 +139,7 @@ body.dark-mode h1 {
 }
 
 .theme-icon::before {
-    content: "🌞";
+    content: "🌞";  
 }
 
 body.dark-mode .theme-icon {
@@ -312,7 +312,7 @@ body.dark-mode .section p {
 
 #ctfs li {
     color: inherit;
-}
+}   
 
 body.dark-mode {
     cursor: url('.png') 10 10, pointer;
@@ -336,18 +336,18 @@ footer {
     border-radius: 0.5rem;
     overflow: hidden;
 }
-
+  
 .education-table th, .education-table td {
     padding: 0.75rem 1rem;
     text-align: left;
     border-bottom: 1px solid var(--border-color);
 }
-
+  
 .education-table thead {
     background-color: var(--table-head-bg);
     color: var(--table-head-text);
 }
-
+  
 .education-table tr:last-child td {
     border-bottom: none;
 }
@@ -362,18 +362,14 @@ footer {
     --table-head-text: #000000;
     --text-color: #000000;
     --border-color: #cccccc;
-    --tag-bg: #e0e0e0;
-    --tag-text: #000000;
 }
-
+  
 body.dark-mode {
     --table-bg: #1e1e2f;
     --table-head-bg: #2e2e40;
     --table-head-text: #ffffff;
     --text-color: #e0e0e0;
     --border-color: #444;
-    --tag-bg: #2a2a3d;
-    --tag-text: #ffffff;
 }
 
 .skills-container {
@@ -382,7 +378,7 @@ body.dark-mode {
     gap: 0.5rem;
     margin-top: 1rem;
 }
-
+  
 .skill-tag {
     padding: 0.5rem 1rem;
     background-color: var(--tag-bg);
@@ -391,4 +387,14 @@ body.dark-mode {
     font-size: 0.9rem;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     transition: background-color 0.3s;
+}
+
+:root {
+    --tag-bg: #e0e0e0;
+    --tag-text: #000000;
+}
+  
+body.dark-mode {
+    --tag-bg: #2a2a3d;
+    --tag-text: #ffffff;
 }
