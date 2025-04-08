@@ -308,11 +308,7 @@ body.dark-mode .section p {
 
 #ctfs ul {
     list-style-type: disc;
-}
-
-#ctfs li {
-    color: inherit;
-}   
+} 
 
 body.dark-mode {
     cursor: url('.png') 10 10, pointer;
