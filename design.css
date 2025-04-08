@@ -68,6 +68,12 @@ body.dark-mode p {
     transition: transform 0.3s ease-in-out; 
 }
 
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .profile-pic:hover {
     transform: scale(1.1); 
 }
@@ -311,5 +317,90 @@ body.dark-mode #ctfs li {
     font-family: 'Quicksand', sans-serif;
     color: #9370DB !important;
     font-weight: bold;
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--table-bg);
+  color: var(--text-color);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.education-table th, .education-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.education-table thead {
+  background-color: var(--table-head-bg);
+  color: var(--table-head-text);
+}
+
+.education-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive container */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Light and Dark Mode Variables */
+:root {
+  --table-bg: #ffffff;
+  --table-head-bg: #f0f0f0;
+  --table-head-text: #000000;
+  --text-color: #000000;
+  --border-color: #cccccc;
+}
+
+body.dark-mode {
+  --table-bg: #1e1e2f;
+  --table-head-bg: #2e2e40;
+  --table-head-text: #ffffff;
+  --text-color: #e0e0e0;
+  --border-color: #444;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+/* Light and Dark Mode variables */
+:root {
+  --tag-bg: #e0e0e0;
+  --tag-text: #000000;
+}
+
+body.dark-mode {
+  --tag-bg: #2a2a3d;
+  --tag-text: #ffffff;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
