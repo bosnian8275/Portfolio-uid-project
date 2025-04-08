@@ -10,7 +10,6 @@ Welcome to my personal portfolio website! This is a responsive, visually dynamic
 - 🧠 **CTF Participation List** – color-coded and dynamically styled  
 - 📫 **Contact Me** links with animation and hover feedback  
 - 🎨 Custom theme switcher (light/dark)  
-- 🖱️ Optional support for custom cursor (for extra flair)
 
 ## 🌗 Theme Toggle
 
